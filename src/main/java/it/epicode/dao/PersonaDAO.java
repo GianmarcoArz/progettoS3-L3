@@ -36,6 +36,7 @@ public class PersonaDAO {
         pReale.setNome(persona.getNome());
         pReale.setCognome(persona.getCognome());
         pReale.setEmail(persona.getEmail());
+        pReale.setSesso(persona.getSesso());
 
 
         em.getTransaction().begin();

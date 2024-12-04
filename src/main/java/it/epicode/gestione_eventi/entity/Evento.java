@@ -4,6 +4,7 @@ package it.epicode.gestione_eventi.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -20,7 +21,7 @@ public class Evento {
     private String titolo;
 
     @Column(name = "data_evento",nullable = false)
-    private Date dataEvento;
+    private LocalDate dataEvento;
 
     @Column(nullable = false)
     private String descrizione;

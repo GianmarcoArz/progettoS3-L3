@@ -38,9 +38,6 @@ public class Persona {
     @Enumerated(EnumType.STRING)
     private SessoEnum sesso;
 
-
-
-
     @OneToMany(mappedBy = "persona")
     private List<Partecipazione> listaPartecipazioni = new ArrayList<>();
 
