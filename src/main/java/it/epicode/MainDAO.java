@@ -29,7 +29,7 @@ public class MainDAO {
         evento1.setDataEvento(faker.date().future(10, java.util.concurrent.TimeUnit.DAYS));
         evento1.setDescrizione("Main event tonight for us");
         evento1.setTipoEvento(EventoEnum.PUBBLICO);
-        evento1.setNumeroMassimoPartecipanti(150);
+        evento1.setNumeroMassimoPartecipanti(100);
 
 
 
