@@ -4,7 +4,9 @@ package it.epicode.gestione_eventi.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Data
@@ -30,6 +32,13 @@ public class Evento {
     @Column(name = "num_max_partecipanti",nullable = false)
     private int numeroMassimoPartecipanti;
 
+    @OneToOne
+    @JoinColumn(name = "location_id")
+    private Location location;
+
+    @OneToMany
+    @JoinColumn(name= "evento")
+    private List<Partecipazione> listaPartecipazioni = new ArrayList<>();
 
 
 
