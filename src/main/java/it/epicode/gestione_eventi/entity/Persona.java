@@ -41,5 +41,9 @@ public class Persona {
     @OneToMany(mappedBy = "persona")
     private List<Partecipazione> listaPartecipazioni = new ArrayList<>();
 
+    @ManyToOne
+    @JoinColumn(name = "gara_di_atletica_id")
+    private GaraDiAtletica garaDiAtletica;
+
 
 }

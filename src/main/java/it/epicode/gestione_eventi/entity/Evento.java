@@ -12,6 +12,8 @@ import java.util.List;
 @Entity
 @Data
 @Table(name = "eventi")
+@Inheritance(strategy = InheritanceType.JOINED)
+
 public class Evento {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
